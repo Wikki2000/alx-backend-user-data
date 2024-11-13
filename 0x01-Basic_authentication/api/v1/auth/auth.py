@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """ Authentication Module """
+from typing import TypeVar, List
 
 
 class Auth:
