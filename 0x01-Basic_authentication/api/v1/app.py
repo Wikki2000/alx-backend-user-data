@@ -49,7 +49,7 @@ def before_req() -> None:
         '/api/v1/unauthorized/',
         '/api/v1/forbidden/'
     ]
-    if not auth or auth.require_auth(request.path, excluded_paths):
+    if not auth or not auth.require_auth(request.path, excluded_paths):
         return
     if not auth.authorization_header(request):
         abort(401)
