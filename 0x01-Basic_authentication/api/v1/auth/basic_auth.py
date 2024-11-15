@@ -38,6 +38,5 @@ class BasicAuth(Auth):
             message_bytes = base64.b64decode(base64_bytes)
 
             return message_bytes.decode('utf-8')
-        except Exception as e:
-            print(str(e))
+        except Exception:
             return None
