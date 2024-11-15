@@ -3,6 +3,7 @@
 from typing import TypeVar, List
 from flask import request
 
+
 class Auth:
     """ Auth class """
 
